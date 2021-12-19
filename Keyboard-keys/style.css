@@ -3,29 +3,45 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: consolas;
 }
 
 body
 {
-  display: flex;
+/*   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   min-height: 100vh;
   background: #232323;
 }
-
+/* z x c v b n m comma slash RShift RShift RShift RShift 
+  MetaLeft alt spacekey spacekey spacekey spacekey altGr Rctrl arrow-left arrow-up arrow-down arrow-right*/
+.container 
+{
+  border: 20px solid rgb(24, 21, 21);
+  border-radius: 20px;
+  margin: 50px auto;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns:repeat(15, 1fr);
+  grid-row-gap: 3px;
+  grid-column-gap: 3px;
+  max-width: 85vw;
+  grid-template-areas: 
+    "LShift backSlash z x c v b n m comma period slash RShift RShift RShift"
+    "ctrl fn MetaLeft alt spacekey spacekey spacekey spacekey spacekey spacekey altGr Rctrl arrow-left arrow-up-down arrow-right";
+}
 span 
 {
   position: relative;
   display: inline-block;
-  width: 80px;
+/*   width: 80px; */
   height: 80px;
   padding: 8px 15px;
+  margin: 2px;
   border-radius: 10px;
   background: linear-gradient(180deg, #282828, #202020);
   box-shadow: inset -8px 0 8px rgba(0, 0, 0, 0.15),
-              inset 0 -8px 8px rgba(0, 0, 0, 0.25)
+              inset 0 -8px 8px rgba(0, 0, 0, 0.25),
               0 0 0 2px rgba(0, 0, 0, 0.75),
               10px 20px 25px rgba(0, 0, 0, 0.4);
   overflow: hidden;
@@ -49,10 +65,107 @@ span::before
 
 }
 
-span i 
+span i
 {
   position: relative;
   color: #fff;
   font-style: normal;
-  text-transform: uppercase;
 }
+
+ion-icon
+{
+  position: absolute;
+  top: 15px;
+  left: 12px;
+  width: 20px;
+  height: 20px;
+}
+ion-icon .arrows
+{
+  top: 90%;
+  left: 15px;
+}
+.arrows:last-child
+{
+  top: -6px;
+}
+
+/* grid area sittings */
+
+.LShift {
+  grid-area:LShift;
+}
+.backSlash {
+  grid-area: backSlash;
+}
+.z {
+  grid-area: z;
+}
+.x {
+  grid-area: x;
+}
+.c {
+  grid-area: c;
+}
+.v {
+  grid-area: v;
+}
+.b {
+  grid-area:b;
+}
+.n {
+  grid-area:n;
+}
+.m {
+  grid-area: m;
+}
+.comma {
+  grid-area: comma;
+}
+.period {
+  grid-area: period;
+}
+.slash {
+  grid-area: slash;
+}
+.RShift {
+  grid-area:RShift;
+}
+.ctrl {
+  grid-area: ctrl;
+}
+.fn {
+  grid-area: fn;
+}
+.MetaLeft {
+  grid-area: MetaLeft;
+}
+.alt {
+  grid-area: alt;
+}
+.spacekey {
+  grid-area: spacekey;
+}
+.altGr {
+  grid-area: altGr;
+}
+.Rctrl {
+  grid-area: Rctrl;
+}
+.arrow-left {
+  grid-area: arrow-left;
+}
+.arrow-up-down {
+  grid-area: arrow-up-down;
+  height: 35px;
+}
+.down{
+  top: 50%;
+}
+.arrow-right {
+  grid-area: arrow-right;
+}
+.blank {
+  grid-area: blank;
+}
+
