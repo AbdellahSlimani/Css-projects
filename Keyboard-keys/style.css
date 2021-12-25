@@ -1,55 +1,45 @@
-* 
-{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body
-{
-/*   display: flex;
-  justify-content: center;
-  align-items: center; */
+body {
   min-height: 100vh;
   background: #232323;
 }
-/* z x c v b n m comma slash RShift RShift RShift RShift 
-  MetaLeft alt spacekey spacekey spacekey spacekey altGr Rctrl arrow-left arrow-up arrow-down arrow-right*/
-.container 
-{
+
+.container {
   border: 20px solid rgb(24, 21, 21);
   border-radius: 20px;
   margin: 50px auto;
   display: grid;
   grid-template-rows: repeat(2, 1fr);
-  grid-template-columns:repeat(15, 1fr);
+  grid-template-columns: repeat(15, 1fr);
   grid-row-gap: 3px;
   grid-column-gap: 3px;
   max-width: 85vw;
-  grid-template-areas: 
+  grid-template-areas:
     "LShift backSlash z x c v b n m comma period slash RShift RShift RShift"
     "ctrl fn MetaLeft alt spacekey spacekey spacekey spacekey spacekey spacekey altGr Rctrl arrow-left arrow-up-down arrow-right";
 }
-span 
-{
+span {
   position: relative;
   display: inline-block;
-/*   width: 80px; */
+  /*   width: 80px; */
   height: 80px;
   padding: 8px 15px;
   margin: 2px;
   border-radius: 10px;
   background: linear-gradient(180deg, #282828, #202020);
   box-shadow: inset -8px 0 8px rgba(0, 0, 0, 0.15),
-              inset 0 -8px 8px rgba(0, 0, 0, 0.25),
-              0 0 0 2px rgba(0, 0, 0, 0.75),
-              10px 20px 25px rgba(0, 0, 0, 0.4);
+    inset 0 -8px 8px rgba(0, 0, 0, 0.25), 0 0 0 2px rgba(0, 0, 0, 0.75),
+    10px 20px 25px rgba(0, 0, 0, 0.4);
   overflow: hidden;
 }
 
-span::before 
-{
-  content: '';
+span::before {
+  content: "";
   position: absolute;
   top: 3px;
   left: 4px;
@@ -58,42 +48,37 @@ span::before
   background: linear-gradient(90deg, #232323, #4a4a4a);
   border-radius: 10px;
   box-shadow: -10px -10px 10px rgba(225, 225, 255, 0.25),
-  10px 5px 10px rgba(0, 0, 0, 0.15);
+    10px 5px 10px rgba(0, 0, 0, 0.15);
   border-left: 1px solid #0004;
   border-bottom: 1px solid #0004;
   border-top: 1px solid #0009;
-
 }
 
-span i
-{
+span i {
   position: relative;
   color: #fff;
   font-style: normal;
 }
 
-ion-icon
-{
+ion-icon {
   position: absolute;
   top: 15px;
   left: 12px;
   width: 20px;
   height: 20px;
 }
-ion-icon .arrows
-{
-  top: 90%;
+ion-icon .arrows {
+  top: 50%;
   left: 15px;
 }
-.arrows:last-child
-{
+.arrows:last-child {
   top: -6px;
 }
 
 /* grid area sittings */
 
 .LShift {
-  grid-area:LShift;
+  grid-area: LShift;
 }
 .backSlash {
   grid-area: backSlash;
@@ -111,10 +96,10 @@ ion-icon .arrows
   grid-area: v;
 }
 .b {
-  grid-area:b;
+  grid-area: b;
 }
 .n {
-  grid-area:n;
+  grid-area: n;
 }
 .m {
   grid-area: m;
@@ -129,7 +114,7 @@ ion-icon .arrows
   grid-area: slash;
 }
 .RShift {
-  grid-area:RShift;
+  grid-area: RShift;
 }
 .ctrl {
   grid-area: ctrl;
@@ -159,7 +144,7 @@ ion-icon .arrows
   grid-area: arrow-up-down;
   height: 35px;
 }
-.down{
+.down {
   top: 50%;
 }
 .arrow-right {
@@ -168,4 +153,3 @@ ion-icon .arrows
 .blank {
   grid-area: blank;
 }
-
