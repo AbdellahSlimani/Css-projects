@@ -74,7 +74,78 @@ body {
   font-weight: 300;
 }
 
+.contact_info {
+  padding-top: 40px;
+}
 
+.title {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.contact_info ul {
+  position: relative;
+}
+
+.contact_info ul li {
+  position: relative;
+  list-style: none;
+  margin: 10px 0;
+  cursor:  pointer;
+}
+
+.contact_info ul li .icon {
+  display: inline-block;
+  width: 30px;
+  font-size: 18px;
+  color: #03a9f4;
+}
+
+.contact_info ul li span {
+  color: #fff;
+  font-weight: 300;
+}
+
+.contact_info.education li {
+  margin-bottom: 15px;
+}
+
+.contact_info.education h5 {
+  color: #03a9f4;
+  font-weight: 500;
+}
+
+.contact_info.education h4 {
+  color: #fff;
+  font-weight: 300;
+}
+.contact_info.education h4:nth-child(2) {
+  color: #fff;
+  font-weight: 500;
+}
+
+.contact_info.languages .percentage {
+  position: relative;
+  width: 100%;
+  height: 6px;
+  background: rgb(12, 14, 13);
+  display: block;
+  margin-top: 5px;
+  border-radius: 2px;
+
+}
+
+.contact_info.languages .percentage div{
+  background-color: #03a9f4;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border-radius: 2px;
+}
 
 .container .right_side {
   position: relative;
