@@ -2,7 +2,7 @@ let btn = document.querySelector('.button')
 let spinIcon = document.querySelector('.spinner')
 let btnText = document.querySelector('.btn-text')
 
-btn.addEventListener("click", () => {
+let check = function(){
   btn.style.cursor = "wait"
   btn.classList.add('checked');
   spinIcon.classList.add('spin')
@@ -14,6 +14,8 @@ btn.addEventListener("click", () => {
     spinIcon.classList.replace('fa-fan', 'fa-check')
     btnText.textContent = "Done"
     btn.setAttribute('disabled', '')
+    btn.removeEventListener("click", check) //to prevent the button clicking after the checked class is added
   }, 4000);
 
-})
+}
+btn.addEventListener("click", check)

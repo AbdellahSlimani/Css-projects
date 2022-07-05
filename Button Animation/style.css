@@ -22,7 +22,6 @@ body{
   background-color: #4070f4;
   padding: 20px 36px;
   border-radius: 8px;
-  border: none;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   user-select: 'none';
