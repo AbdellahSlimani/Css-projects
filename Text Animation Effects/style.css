@@ -12,6 +12,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   min-height: 100vh;
   background: #111;
 }
@@ -34,6 +35,54 @@ h2::before {
   filter: drop-shadow(0 0 20px #fff) drop-shadow(0 0 50px #fff);
 }
 
+#inputScreen {
+  position: relative;
+  margin-top: 50px;
+}
+
+h1 {
+  color: rgb(109, 109, 109);
+  margin-bottom: 15px;
+}
+
+input {
+  margin-left: 175px;
+  background: #222;
+  border: 1px solid #222;
+  height: 30px;
+  width: 200px;
+  color: #fff;
+  padding-left: 10px;
+  border-radius: 5px;
+}
+
+button{
+  background: rgb(109, 109, 109);
+  color: #fff;
+  padding: 5px 10px 5px 10px;
+  border-radius: 5px;
+}
+
+
+input:focus{
+  border: none;
+}
+
+.hide {
+  display: none;
+}
+ 
+.show {
+  display: block;
+}
+
+p {
+  position: absolute;
+  bottom: 5%;
+  color: #fff;
+  display: none;
+}
+
 @keyframes TextAnimation {
 
   0%, 10%, 100% {
@@ -45,3 +94,16 @@ h2::before {
   }
   
 }
+kbd {
+  background-color: #eee;
+  border-radius: 3px;
+  border: 1px solid #b4b4b4;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .2), 0 2px 0 0 rgba(255, 255, 255, .7) inset;
+  color: #333;
+  display: inline-block;
+  font-size: .85em;
+  font-weight: 700;
+  line-height: 1;
+  padding: 2px 4px;
+  white-space: nowrap;
+ }
