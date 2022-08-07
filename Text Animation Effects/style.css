@@ -19,7 +19,7 @@ body {
 
 h2 {
   position: relative;
-  font-size: 6em;
+  font-size: 6vw;
   color:#222;
 }
 
@@ -38,19 +38,30 @@ h2::before {
 #inputScreen {
   position: relative;
   margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 h1 {
   color: rgb(109, 109, 109);
   margin-bottom: 15px;
+  font-size: 2vw;
+}
+
+.inputWrapper {
+  display: flex;
+  justify-content:center ;
+  align-items: center;
+  gap: 10px;
 }
 
 input {
-  margin-left: 175px;
   background: #222;
   border: 1px solid #222;
   height: 30px;
-  width: 200px;
+  width: 15vw;
   color: #fff;
   padding-left: 10px;
   border-radius: 5px;
@@ -61,17 +72,17 @@ button{
   color: #fff;
   padding: 5px 10px 5px 10px;
   border-radius: 5px;
+  border: 1px solid #222;
 }
-
 
 input:focus{
   border: none;
 }
 
 .hide {
-  display: none;
+  display: none !important;
 }
- 
+
 .show {
   display: block;
 }
@@ -81,6 +92,20 @@ p {
   bottom: 5%;
   color: #fff;
   display: none;
+}
+
+kbd {
+  background-color: #eee;
+  border-radius: 3px;
+  border: 1px solid #b4b4b4;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .2), 0 2px 0 0 rgba(255, 255, 255, .7) inset;
+  color: #333;
+  display: inline-block;
+  font-size: .85em;
+  font-weight: 700;
+  line-height: 1;
+  padding: 2px 4px;
+  white-space: nowrap;
 }
 
 @keyframes TextAnimation {
@@ -94,16 +119,30 @@ p {
   }
   
 }
-kbd {
-  background-color: #eee;
-  border-radius: 3px;
-  border: 1px solid #b4b4b4;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, .2), 0 2px 0 0 rgba(255, 255, 255, .7) inset;
-  color: #333;
-  display: inline-block;
-  font-size: .85em;
-  font-weight: 700;
-  line-height: 1;
-  padding: 2px 4px;
-  white-space: nowrap;
- }
+
+@media (max-width: 767px) {
+
+  h2 {
+    font-size: 9vw;
+    margin-bottom: 15vh;
+  }
+  input {
+    width: 20vw;
+    font-size: 0.7em;
+  }
+  
+  button span{
+    display: none;
+  }
+  button::before {
+    content: "✔";
+  }
+
+  p span {
+    display: none;
+  }
+
+  p::after {
+    content: 'To go back · reload ⟳ the page';
+  }
+}

@@ -12,12 +12,14 @@
   <h2 id="initialText" data-text="&nbsp;TEXT ANIMATION&nbsp;">&nbsp;TEXT ANIMATION&nbsp;</h2>
 
   <div id="inputScreen">
-    <h1 for="text">Type down the Text you want to showCase</h1>
-    <input autofocus type="text" placeholder="Enter text" required>
-    <button onclick="showCase()">ShowCase</button>
+    <h1>Type down the Text you want to showCase</h1>
+    <div class="inputWrapper">
+      <input autofocus type="text" placeholder="Enter text" required>
+      <button onclick="showCase()"><span>ShowCase</span></button>
+    </div> 
   </div>
 
-  <p id="goBackHint">Click the delete Key <kbd>Del</kbd> to go back </p>
+  <p id="goBackHint"><span>Click the delete Key <kbd>Del</kbd> to go back</span></p>
 
   <script src="script.js"></script>
 </body>
