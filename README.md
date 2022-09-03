@@ -10,3 +10,4 @@ Outputs :<br>
 <a href='https://abdellahslimani.github.io/Css-projects/Product%20Card%20UI%20Design/index.html' target="_blank">Product Card UI Design</a>.<br>
 <a href='https://abdellahslimani.github.io/Css-projects/Button%20Animation/index.html' target="_blank">Button Animation</a>.<br>
 <a href='https://abdellahslimani.github.io/Css-projects/Text%20Animation%20Effects/index.html' target="_blank">Text Animation Effects</a>.<br>
+<a href='https://abdellahslimani.github.io/Css-projects/Kinetic%20Loader/index.html' target="_blank">Kinetic Loader</a>.<br>
