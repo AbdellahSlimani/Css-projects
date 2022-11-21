@@ -11,3 +11,4 @@ Outputs :<br>
 <a href='https://abdellahslimani.github.io/Css-projects/Button%20Animation/index.html' target="_blank">Button Animation</a>.<br>
 <a href='https://abdellahslimani.github.io/Css-projects/Text%20Animation%20Effects/index.html' target="_blank">Text Animation Effects</a>.<br>
 <a href='https://abdellahslimani.github.io/Css-projects/Kinetic%20Loader/index.html' target="_blank">Kinetic Loader</a>.<br>
+<a href='https://abdellahslimani.github.io/Css-projects/Jumping%20square%20loader/index.html' target="_blank">Jumping Square Loader</a>.<br>
